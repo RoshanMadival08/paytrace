@@ -1,0 +1,22 @@
+[project]
+name = "paytrace"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Roshan Madival", email = "roshanmadivalwork@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.143.0",
+    "pika>=1.4.4",
+    "psycopg[binary]>=3.3.6",
+    "sqlalchemy>=2.1.4",
+]
+
+[project.scripts]
+paytrace = "paytrace:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
